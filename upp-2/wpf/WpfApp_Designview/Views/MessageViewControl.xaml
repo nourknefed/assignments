@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="WpfApp_Designview.Views.MessageViewControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp_Designview.Views"
+              xmlns:model="clr-namespace:WpfApp_Designview.Models"
+            
+             mc:Ignorable="d" 
+             d:DesignHeight="660" d:DesignWidth="700">
+    
+    
+    
+    <Grid Background="#FFEDEDED">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button x:Name="btn_ms1" Content="Message1" Padding="20" BorderThickness="1" Click="btn_ms1_Click"/>
+            <Button x:Name="btn_ms2" Content="Message2" Padding="20" BorderThickness="1" Click="btn_ms2_Click"/>
+            <Button x:Name="btn_ms3" Content="Message3" Padding="20" BorderThickness="1" Click="btn_ms3_Click"/>
+            <Button x:Name="btn_ms4" Content="Message4" Padding="20" BorderThickness="1" Click="btn_ms4_Click"/>
+        </StackPanel>
+        
+        
+        <Grid Grid.Column="1" Background="#FFF6F6F6" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel>
+                <TextBlock x:Name="Subject"  FontWeight="Bold" FontSize="18" Margin="20,20,0,0" FontFamily="Arial" />
+            </StackPanel>
+            <Grid Grid.Row="1" Margin="20,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0">
+                    <TextBlock x:Name="from" FontFamily="Arial" />
+                    <TextBlock x:Name="to" FontSize="10" Margin="0,5,0,0" FontFamily="Arial"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <StackPanel Orientation="Horizontal" Grid.Column="1"  HorizontalAlignment="Right" VerticalAlignment="Top">
+                        <Button Content="Reply" FontSize="12" Margin="20,0" />
+                        <Button Content="Forward" FontSize="12" Margin="0,0,20,0"/>
+
+
+                    </StackPanel>
+                    <TextBlock x:Name="time"   HorizontalAlignment="Right" Margin="0,5,20,0" FontSize="10" FontFamily="Arial"/>
+
+                </StackPanel>
+                
+
+            </Grid>
+            <StackPanel Grid.Row="2" Margin="20,50,50,50">
+                <TextBlock x:Name="body"  FontSize="13" TextWrapping="Wrap" FontFamily="Arial"/>
+
+            </StackPanel>
+            
+            
+        </Grid>
+       
+            
+    </Grid>
+</UserControl>

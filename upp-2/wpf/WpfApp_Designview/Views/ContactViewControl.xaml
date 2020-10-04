@@ -1,0 +1,92 @@
+﻿<UserControl xmlns:Control="clr-namespace:Wpf3_customControl.Control"  x:Class="WpfApp_Designview.Views.ContactViewControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp_Designview.Views"
+             xmlns:Models="clr-namespace:WpfApp_Designview.Models"
+             
+             
+             
+             mc:Ignorable="d" 
+             d:DesignHeight="660" d:DesignWidth="700">
+
+    <Grid Background="#FFD8E4EA" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Background="#FFEAEDED" x:Name="contactlist" Grid.Column="0">
+            <Button Background="Transparent" BorderThickness="0" x:Name="c1" Click="c1_Click" >
+                <Control:ContactControl ContactName="Ayahm Sanjakdar" Contactrole="Ecomist" Width="248" Contactimage="/Views/Niklas_Ingvarsson.jpg" />
+         
+            </Button>
+            <Button Background="Transparent" BorderThickness="0" x:Name="c2" Click="c2_Click">
+                <Control:ContactControl ContactName="Karl Andersson" Contactrole="It Manager" Width="248" Contactimage="/Views/1424.jpg" />
+
+            </Button>
+            <Button Background="Transparent" BorderThickness="0" x:Name="c3" Click="c3_Click">
+                <Control:ContactControl ContactName="Nour Knefed" Contactrole="Architect" Width="248" Contactimage="/Views/1726052_henriettaadamssoneryd231.jpg" />
+
+            </Button>
+            <Button Background="Transparent" BorderThickness="0" x:Name="c4" Click="c4_Click">
+                <Control:ContactControl ContactName="Tidle Martinsson" Contactrole="Dentist Assistant" Width="248" Contactimage="/Views/bibi-rydbacken.jpg" />
+
+            </Button>
+            <Button Background="Transparent" BorderThickness="0" x:Name="c5" Click="c5_Click">
+                <Control:ContactControl ContactName="Emilia  Harförs" Contactrole="Teacher" Width="248" Contactimage="/Views/AntjeJackelen.jpg" />
+
+            </Button>
+            <Button Background="Transparent" BorderThickness="0" x:Name="c6" Click="c6_Click">
+                <Control:ContactControl ContactName="Jenny Johansson" Contactrole="Doctor" Width="248" Contactimage="/Views/unnamed.jpg" />
+
+            </Button>
+            <Button Background="Transparent" BorderThickness="0" x:Name="c7" Click="c7_Click">
+                <Control:ContactControl ContactName="Naya Känfed" Contactrole="Student" Width="248" Contactimage="/Views/afa473f6-f43f-4e89-954d-a0ecfffb5a76.jpg" />
+
+            </Button>
+            <Button Background="Transparent" BorderThickness="0" x:Name="c8" Click="c8_Click">
+                <Control:ContactControl ContactName="Felicia Andersson" Contactrole="Nurse" Width="248" Contactimage="/Views/genao_linedy_260x325.jpg" />
+
+            </Button>
+            <Button Background="Transparent" BorderThickness="0" x:Name="c9" Click="c9_Click">
+                <Control:ContactControl ContactName="Cecilia Karlstad" Contactrole="Urban designer" Width="248" Contactimage="/Views/images.jpg" />
+
+            </Button>
+            <Button Background="Transparent" BorderThickness="0" x:Name="c10" Click="c10_Click">
+                <Control:ContactControl ContactName="Julia Roberto" Contactrole="Artist" Width="248" Contactimage="/Views/jalene-kanani.jpg" />
+
+            </Button>
+
+
+     
+           
+        </StackPanel>
+
+        <Grid  Grid.Column="1" Margin="40">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Margin="0,50,0,0">
+                <TextBlock x:Name="Name"  HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center"/>
+                <TextBlock x:Name="Mobile"  HorizontalAlignment="Center" FontSize="18" VerticalAlignment="Center" Margin="0,40,0,0"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Margin="0,50,0,0">
+                <TextBlock x:Name="email"  HorizontalAlignment="Left" FontSize="20" Margin="20,50,0,5"/>
+                
+            </StackPanel>
+            
+
+        </Grid>
+
+
+       
+
+
+    </Grid>
+    
+</UserControl>

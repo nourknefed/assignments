@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\1424.jpg" />
+    <None Remove="Views\1726052_henriettaadamssoneryd231.jpg" />
+    <None Remove="Views\afa473f6-f43f-4e89-954d-a0ecfffb5a76.jpg" />
+    <None Remove="Views\AntjeJackelen.jpg" />
+    <None Remove="Views\bibi-rydbacken.jpg" />
+    <None Remove="Views\calendar-screen.png" />
+    <None Remove="Views\genao_linedy_260x325.jpg" />
+    <None Remove="Views\images.jpg" />
+    <None Remove="Views\jalene-kanani.jpg" />
+    <None Remove="Views\Niklas_Ingvarsson.jpg" />
+    <None Remove="Views\unnamed.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\1424.jpg" />
+    <Resource Include="Views\1726052_henriettaadamssoneryd231.jpg" />
+    <Resource Include="Views\afa473f6-f43f-4e89-954d-a0ecfffb5a76.jpg" />
+    <Resource Include="Views\AntjeJackelen.jpg" />
+    <Resource Include="Views\bibi-rydbacken.jpg" />
+    <Resource Include="Views\calendar-screen.png" />
+    <Resource Include="Views\genao_linedy_260x325.jpg" />
+    <Resource Include="Views\images.jpg" />
+    <Resource Include="Views\jalene-kanani.jpg" />
+    <Resource Include="Views\Niklas_Ingvarsson.jpg" />
+    <Resource Include="Views\unnamed.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Control\ContactControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Control\ContactControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>
